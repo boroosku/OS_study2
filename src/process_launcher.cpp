@@ -1,5 +1,7 @@
 #include "process_launcher.hpp"
 #include <iostream>
+#include <cstring>
+#include <cerrno>
 
 #ifdef _WIN32
 int ProcessLauncher::launch(const std::string &program, const std::string &args) {
